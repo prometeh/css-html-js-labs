@@ -1,0 +1,105 @@
+/* inheriting box-sizing
+   to border-box value */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #16215a;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  width: 100vw;
+  height: 3rem;
+  margin-bottom: 0.7rem;
+  background: linear-gradient(#1a537f, #16215a);
+  box-shadow: 3px 3px 13px #0000004c;
+  border-radius: 0 0 0.4rem 0.4rem;
+  z-index: 2;
+}
+
+img {
+  width: 85%;
+  height: 85%;
+  aspect-ratio: 1/1;
+  grid-area: img;
+  object-fit: cover;
+  border-radius: 0.8rem;
+  position: relative;
+  right: -10px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-auto-rows: minmax(150px, 250px);
+  gap: 10px;
+}
+
+footer {
+  color: white;
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+article {
+  display: grid;
+  width: 100%;
+  background-color: #1c3a84;
+  color: ghostwhite;
+  grid-template-areas:
+    "img h2 h2"
+    "img p p";
+  grid-template-columns: repeat(3, minmax(100px, 650px));
+  border-radius: 0.8rem;
+  box-shadow: inset 0 0 10px 1px black;
+  align-items: center;
+  justify-content: center;
+  padding: 0.3rem;
+}
+
+h2 {
+  grid-area: h2;
+}
+
+p {
+  grid-area: p;
+}
+
+nav > ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  flex-direction: row-reverse;
+}
+
+nav > ul > li {
+  margin-right: 1.5rem;
+  background-color: #0000004c;
+  box-shadow: 0.25em 0 0.5em #0000004c, -0.25em 0 0.5em #0000004c;
+}
+
+.box {
+  height: 3rem;
+  padding: 1em;
+}
+
+nav > ul > li > a {
+  color: white;
+  text-decoration: none;
+}
+
+nav > ul > li > a:hover,
+nav > ul > li > a:focus {
+  text-decoration: underline;
+}

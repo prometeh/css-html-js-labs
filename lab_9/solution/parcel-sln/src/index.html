@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+    <link href="style/index.css" rel="stylesheet" />
+
+    <title>Hamburger menu</title>
+  </head>
+  <body class="bg-blue-100">
+    <header class="flex justify-between items-center bg-blue-800">
+      <div class="bg-blue-500 p-5 font-logo text-white text-5xl">lab. 9</div>
+
+      <nav class="flex-col justify-center items-center bg-blue-800 md:flex">
+        <svg
+          class="w-12 mr-8 p-2 text-white md:hidden"
+          id="menu-btn"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"
+          ></path>
+        </svg>
+
+        <svg
+          class="w-12 mr-8 p-2 text-white md:hidden hidden"
+          id="close-btn"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"
+          ></path>
+        </svg>
+
+        <ul class="hidden md:flex nav-links" id="navbar-links">
+          <li class="p-2">Products</li>
+          <li class="p-2">About</li>
+          <li class="p-2 min-w-max">Contact Us</li>
+          <li class="p-2">Features</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <article>
+        <h2 class="p-2 text-3xl">Tellus in metus vulputate eu?</h2>
+        <p class="p-3">
+          A, iaculis at erat pellentesque adipiscing. Lobortis mattis aliquam
+          faucibus purus in massa tempor nec feugiat nisl pretium fusce id velit
+          ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae
+          purus faucibus ornare? Commodo quis imperdiet massa tincidunt nunc
+          pulvinar sapien et ligula ullamcorper malesuada proin libero nunc,
+          consequat interdum varius sit amet. Fermentum leo vel orci porta? Est
+          ultricies integer quis auctor elit. Netus et malesuada fames ac turpis
+          egestas maecenas pharetra convallis posuere morbi leo urna, molestie
+          at elementum eu, facilisis sed odio morbi quis commodo! Sit amet,
+          aliquam id diam maecenas ultricies mi eget mauris pharetra et ultrices
+          neque ornare aenean euismod elementum nisi, quis? Urna duis convallis
+          convallis tellus, id interdum velit laoreet id donec ultrices
+          tincidunt arcu, non! Posuere lorem ipsum dolor sit amet, consectetur
+          adipiscing elit duis tristique sollicitudin nibh sit amet commodo
+          nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue!
+        </p>
+      </article>
+    </main>
+    <script src="script/index.js"></script>
+  </body>
+</html>
