@@ -1,0 +1,24 @@
+/* inheriting box-sizing
+   to border-box value */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  font-size: xx-large;
+}
+
+main {
+  margin: 0 auto;
+}
